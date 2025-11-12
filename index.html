@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login Templates</title>
+    <script>
+  (function () {
+    var key = 'theme';
+    var stored = localStorage.getItem(key);
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (preferDark ? 'dark' : 'light');
+    if (theme === 'dark') document.documentElement.classList.add('dark');
+    else document.documentElement.classList.remove('dark');
+  })();
+</script>
+
+  </head>
+  <body class="h-full bg-zinc-100 dark:bg-zinc-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

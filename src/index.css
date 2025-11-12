@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: smooth fonts */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Crisp text + neutral surface tuning */
+:root {
+  --surface: 255 255 255;        /* white */
+  --surfaceDark: 24 24 27;       /* zinc-900 */
+  --card: 255 255 255;           /* white */
+  --cardDark: 24 24 27;          /* zinc-900 */
+  --borderLight: 230 230 235;    /* subtle but visible */
+  --borderDark: 63 63 70;        /* zinc-700 */
+}
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
